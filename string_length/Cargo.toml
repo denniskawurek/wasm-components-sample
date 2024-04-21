@@ -1,0 +1,21 @@
+[package]
+name = "string_length"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wit-bindgen-rt = { version = "0.24.0", features = ["bitflags"] }
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.component]
+package = "dkwr:string-operations"
+
+[package.metadata.component.target]
+path = "wit"
+world = "string-operations"
+
+[package.metadata.component.dependencies]

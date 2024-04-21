@@ -1,0 +1,9 @@
+package dkwr:stringlength@0.1.0;
+
+interface len {
+    len: func(s: string) -> u32;
+}
+
+world string-operations {
+    export len;
+}
