@@ -5,5 +5,5 @@ use crate::bindings::dkwr::stringlength::len::len;
 
 fn main() {
     let result = len("d");
-    result
+    println!("{result}");
 }

@@ -7,10 +7,10 @@ edition = "2021"
 wit-bindgen-rt = { version = "0.24.0", features = ["bitflags"] }
 
 [package.metadata.component]
-package = "component:app"
+package = "dkwr:app"
 
 [package.metadata.component.target]
 path = "wit"
 
-[package.metadata.component.dependencies]
+[package.metadata.component.target.dependencies]
 "dkwr:stringlength" = { path = "../string_length/wit" }
