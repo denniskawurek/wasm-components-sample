@@ -2,7 +2,7 @@
 
 This is an example for the usage of Wasm components.
 
-[`string_length`](string_length/wit/world.wit) exports a function which is used by [`app`](app/wit/world.wit).
+[`string_length`](string-length/wit/world.wit) exports a function which is used by [`app`](app/wit/world.wit).
 
 ## Setup
 

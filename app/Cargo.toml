@@ -13,4 +13,4 @@ package = "dkwr:app"
 path = "wit"
 
 [package.metadata.component.target.dependencies]
-"dkwr:stringlength" = { path = "../string_length/wit" }
+"dkwr:stringlength" = { path = "../string-length/wit" }
