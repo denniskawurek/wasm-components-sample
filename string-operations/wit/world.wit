@@ -1,4 +1,4 @@
-package dkwr:stringlength@0.1.0;
+package dkwr:stringoperations@0.1.0;
 
 interface len {
     len: func(s: string) -> u32;

@@ -3,7 +3,7 @@
 #[allow(dead_code)]
 pub mod dkwr {
     #[allow(dead_code)]
-    pub mod stringlength {
+    pub mod stringoperations {
         #[allow(dead_code, clippy::all)]
         pub mod len {
             #[used]
@@ -19,7 +19,7 @@ pub mod dkwr {
                     let len0 = vec0.len();
 
                     #[cfg(target_arch = "wasm32")]
-                    #[link(wasm_import_module = "dkwr:stringlength/len@0.1.0")]
+                    #[link(wasm_import_module = "dkwr:stringoperations/len@0.1.0")]
                     extern "C" {
                         #[link_name = "len"]
                         fn wit_import(_: *mut u8, _: usize) -> i32;
@@ -40,12 +40,12 @@ pub mod dkwr {
 #[cfg(target_arch = "wasm32")]
 #[link_section = "component-type:wit-bindgen:0.24.0:app:encoded world"]
 #[doc(hidden)]
-pub static __WIT_BINDGEN_COMPONENT_TYPE: [u8; 201] = *b"\
-\0asm\x0d\0\x01\0\0\x19\x16wit-component-encoding\x04\0\x07P\x01A\x02\x01A\x02\x01\
-B\x02\x01@\x01\x01ss\0y\x04\0\x03len\x01\0\x03\x01\x1bdkwr:stringlength/len@0.1.\
-0\x05\0\x04\x01\x12dkwr:app/app@0.1.0\x04\0\x0b\x09\x01\0\x03app\x03\0\0\0G\x09p\
-roducers\x01\x0cprocessed-by\x02\x0dwit-component\x070.202.0\x10wit-bindgen-rust\
-\x060.24.0";
+pub static __WIT_BINDGEN_COMPONENT_TYPE: [u8; 205] = *b"\
+\0asm\x0d\0\x01\0\0\x19\x16wit-component-encoding\x04\0\x07T\x01A\x02\x01A\x02\x01\
+B\x02\x01@\x01\x01ss\0y\x04\0\x03len\x01\0\x03\x01\x1fdkwr:stringoperations/len@\
+0.1.0\x05\0\x04\x01\x12dkwr:app/app@0.1.0\x04\0\x0b\x09\x01\0\x03app\x03\0\0\0G\x09\
+producers\x01\x0cprocessed-by\x02\x0dwit-component\x070.202.0\x10wit-bindgen-rus\
+t\x060.24.0";
 
 #[inline(never)]
 #[doc(hidden)]

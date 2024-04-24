@@ -1,7 +1,7 @@
 #[allow(warnings)]
 mod bindings;
 
-use crate::bindings::exports::dkwr::stringlength::len::Guest;
+use crate::bindings::exports::dkwr::stringoperations::len::Guest;
 
 struct Component;
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-(cd string-length && cargo component build --release)
+(cd string-operations && cargo component build --release)
 (cd app && cargo component build --release)
 
-(wasm-tools compose app/target/wasm32-wasi/release/app.wasm -d string-length/target/wasm32-wasi/release/string-length.wasm -o out.wasm)
+(cd string-operations/target/wasm32-wasi/release/; mv string_operations.wasm string-operations.wasm)
+(wasm-tools compose app/target/wasm32-wasi/release/app.wasm -d string-operations/target/wasm32-wasi/release/string-operations.wasm -o out.wasm)
