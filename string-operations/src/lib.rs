@@ -6,7 +6,6 @@ use crate::bindings::exports::dkwr::stringoperations::len::Guest;
 struct Component;
 
 impl Guest for Component {
-    /// Say hello!
     fn len(s: String) -> u32 {
         s.len().try_into().unwrap()
     }

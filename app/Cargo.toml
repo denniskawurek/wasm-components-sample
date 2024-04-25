@@ -11,6 +11,7 @@ package = "dkwr:app"
 
 [package.metadata.component.target]
 path = "wit"
+world = "app"
 
 [package.metadata.component.target.dependencies]
 "dkwr:stringoperations" = { path = "../string-operations/wit" }
